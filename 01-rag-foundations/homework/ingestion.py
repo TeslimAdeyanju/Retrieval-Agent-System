@@ -97,8 +97,28 @@ def build_docs(manual_slug: str = "company-taxation-manual", max_pages: int = 30
     return docs
 
 
+MANUALS = [
+    "company-taxation-manual",
+    "vat-registration-manual",
+    "paye-manual",
+    "capital-gains-manual",
+    "capital-allowances-manual",
+]
+
+
 if __name__ == "__main__":
-    docs = build_docs("company-taxation-manual", max_pages=300)
     out_path = Path(__file__).parent / "docs.json"
-    out_path.write_text(json.dumps(docs, indent=2))
-    print(f"wrote {len(docs)} docs to {out_path}")
+    existing = json.loads(out_path.read_text()) if out_path.exists() else []
+    by_id = {d["id"]: d for d in existing}
+
+    for manual in MANUALS:
+        if any(d["manual"] == manual for d in existing):
+            print(f"skip {manual}, already in docs.json")
+            continue
+        docs = build_docs(manual, max_pages=300)
+        for d in docs:
+            by_id[d["id"]] = d
+
+    all_docs = list(by_id.values())
+    out_path.write_text(json.dumps(all_docs, indent=2))
+    print(f"wrote {len(all_docs)} docs to {out_path}")
