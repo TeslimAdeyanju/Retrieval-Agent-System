@@ -16,3 +16,9 @@ uv sync
 Use the homework environment when running assignment work. The development
 notebooks and modules remain in `../development` and use the repository's main
 development environment.
+
+## Note
+
+The HMRC tax manuals RAG assignment that was developed here has graduated
+into its own standalone project:
+[uk-tax-rag-assistant](https://github.com/TeslimAdeyanju/uk-tax-rag-assistant).
