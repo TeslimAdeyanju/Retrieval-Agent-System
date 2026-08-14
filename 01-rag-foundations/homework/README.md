@@ -21,4 +21,4 @@ development environment.
 
 The HMRC tax manuals RAG assignment that was developed here has graduated
 into its own standalone project:
-[uk-tax-rag-assistant](https://github.com/TeslimAdeyanju/uk-tax-rag-assistant).
+[hmrc-tax-rag-assistant](https://github.com/TeslimAdeyanju/hmrc-tax-rag-assistant).
