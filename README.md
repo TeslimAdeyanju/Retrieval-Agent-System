@@ -34,7 +34,7 @@ Implemented in this repo:
 	- context construction (`build_context`)
 	- prompt construction (`build_prompt`)
 	- LLM answer generation via OpenAI Responses API (`llm`)
-	- end-to-end pipeline (`rag`)
+	- end-to-end pipeline (`response_generation`)
 - Notebook-based experimentation for iterative development
 
 ## Repository Structure
@@ -119,7 +119,7 @@ index = ingest.build_index(docs)
 client = OpenAI()
 
 rag = rag_pipeline.RAGBase(index=index, llm_client=client)
-answer = rag.rag("How do I submit homework?")
+answer = rag.response_generation("How do I submit homework?")
 print(answer)
 ```
 
