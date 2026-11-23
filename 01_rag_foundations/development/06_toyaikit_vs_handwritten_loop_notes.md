@@ -1,8 +1,8 @@
 # 6. Comparison Checkpoint: Handwritten Loop vs ToyAIKit
 
-This note follows [05-agentic-loop-notes.md](05-agentic-loop-notes.md) and summarizes the framework lessons. The central idea is simple: frameworks package the same tool-calling loop, history management, and stopping behavior we implemented by hand.
+This note follows [05_agentic_loop_notes.md](05_agentic_loop_notes.md) and summarizes the framework lessons. The central idea is simple: frameworks package the same tool-calling loop, history management, and stopping behavior we implemented by hand.
 
-For hands-on ToyAIKit practice, run [06-toyaikit-vs-handwritten-loop.ipynb](06-toyaikit-vs-handwritten-loop.ipynb). The notebook follows the lesson in execution order and keeps model-calling cells available for you to run after checking your environment.
+For hands-on ToyAIKit practice, run [06_toyaikit_vs_handwritten_loop.ipynb](06_toyaikit_vs_handwritten_loop.ipynb). The notebook follows the lesson in execution order and keeps model-calling cells available for you to run after checking your environment.
 
 ## What frameworks hide
 

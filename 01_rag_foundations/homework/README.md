@@ -9,7 +9,7 @@ here without modifying the development implementation.
 Create the homework environment from this directory:
 
 ```bash
-cd 01-rag-foundations/homework
+cd 01_rag_foundations/homework
 uv sync
 ```
 

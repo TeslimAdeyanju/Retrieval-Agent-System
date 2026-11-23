@@ -44,19 +44,19 @@ Implemented in this repo:
 ├── pyproject.toml
 ├── uv.lock
 ├── README.md
-├── 01-rag-foundations/
+├── 01_rag_foundations/
 		├── development/
-		│		├── 01-rag-basics-and-keyword-search.ipynb
-		│		├── 02-reusable-rag-pipeline.ipynb
-		│		├── 03-sqlite-search-index.ipynb
-		│		├── 04-agentic-rag-function-calling.ipynb
-		│		├── 05-agentic-loop.ipynb
-		│		├── 06-toyaikit-vs-handwritten-loop.ipynb
-		│		├── 07-pydantic-ai-vs-toyaikit.ipynb
+		│		├── 01_rag_basics_and_keyword_search.ipynb
+		│		├── 02_reusable_rag_pipeline.ipynb
+		│		├── 03_sqlite_search_index.ipynb
+		│		├── 04_agentic_rag_function_calling.ipynb
+		│		├── 05_agentic_loop.ipynb
+		│		├── 06_toyaikit_vs_handwritten_loop.ipynb
+		│		├── 07_pydantic_ai_vs_toyaikit.ipynb
 		│		├── ingestion.py
 		│		├── rag_pipeline.py
 		│		├── agent_loop.py
-		│		└── faq-search.db
+		│		└── faq_search.db
 		├── homework/
 		│		├── README.md
 		│		└── pyproject.toml
@@ -110,7 +110,7 @@ def load_module(module_name, file_path):
 	spec.loader.exec_module(module)
 	return module
 
-base = Path("01-rag-foundations/development")
+base = Path("01_rag_foundations/development")
 ingest = load_module("ingestion", base / "ingestion.py")
 rag_pipeline = load_module("rag_pipeline", base / "rag_pipeline.py")
 

@@ -1,8 +1,8 @@
 # 5. The Agentic Loop
 
-This note extends [04-agentic-rag-function-calling.ipynb](04-agentic-rag-function-calling.ipynb). The previous notebook demonstrated one tool call: ask the model, execute `search`, return the result, and ask for the answer. This note explains what changes when the model wants to search more than once.
+This note extends [04_agentic_rag_function_calling.ipynb](04_agentic_rag_function_calling.ipynb). The previous notebook demonstrated one tool call: ask the model, execute `search`, return the result, and ask for the answer. This note explains what changes when the model wants to search more than once.
 
-For hands-on practice, run [05-agentic-loop.ipynb](05-agentic-loop.ipynb). It follows this note in execution order and includes runnable experiments for typo recovery, multiple searches, off-topic scope, and safety controls.
+For hands-on practice, run [05_agentic_loop.ipynb](05_agentic_loop.ipynb). It follows this note in execution order and includes runnable experiments for typo recovery, multiple searches, off-topic scope, and safety controls.
 
 ## Why a loop is necessary
 
@@ -10,7 +10,7 @@ A single function call is not enough for questions that contain a typo, vague wo
 
 The agentic loop repeats this cycle:
 
-![LLM function-calling flow](image/LLM_function_calling_flow.png)
+![LLM function-calling flow](image/llm_function_calling_flow.png)
 
 The model controls the next action. Our application controls execution, history, and safety limits.
 

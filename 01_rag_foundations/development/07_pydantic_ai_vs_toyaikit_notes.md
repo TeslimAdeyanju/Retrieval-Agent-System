@@ -1,6 +1,6 @@
 # 7. Comparison Checkpoint: PydanticAI vs ToyAIKit
 
-This note follows [06-toyaikit-vs-handwritten-loop.ipynb](06-toyaikit-vs-handwritten-loop.ipynb) and applies the same framework-learning process to PydanticAI. The hands-on notebook is [07-pydantic-ai-vs-toyaikit.ipynb](07-pydantic-ai-vs-toyaikit.ipynb).
+This note follows [06_toyaikit_vs_handwritten_loop.ipynb](06_toyaikit_vs_handwritten_loop.ipynb) and applies the same framework-learning process to PydanticAI. The hands-on notebook is [07_pydantic_ai_vs_toyaikit.ipynb](07_pydantic_ai_vs_toyaikit.ipynb).
 
 ## Why PydanticAI
 
